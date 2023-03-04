@@ -45,14 +45,14 @@ input::-webkit-inner-spin-button {
     padding: 5px 0px;
     font-size: xx-large;
     border: none;
-    background-color: black;
+    background-color: gray;
     color: white;
     text-align: center;
     cursor: pointer;
     transition: 0.4s;
     // border-radius: 2.4mm;
     &:hover{
-        background-color: rgb(39, 39, 39);
+        background-color: black;
         scale: 1.2;
     }
     &:active{

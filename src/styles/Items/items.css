@@ -2,7 +2,6 @@
   width: 200px;
   height: 250px;
   border: 5px solid transparent;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
   margin-top: 40px;
@@ -10,22 +9,18 @@
   padding: 25px 5px;
   text-decoration: none;
 }
-
 .mainBox:hover {
   scale: 1.1;
   border: 5px solid black;
   outline: 5px solid black;
   outline-offset: -14px;
 }
-
 .mainBox:active {
   scale: 1.15;
   outline-color: orange;
   border-color: purple;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .mainBox:hover .dataimg {
   scale: 0.8;
 }
@@ -35,9 +30,7 @@
   height: 70%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 2px solid red;
 }
 
 .description {
@@ -68,25 +61,51 @@
   .mainBox {
     width: 100%;
     height: 250px;
-    border: 5px solid transparent;
+    border: 5px solid black;
     margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    scale: 0.9;
+  }
+  .mainBox:hover {
+    scale: 0.95;
+    border: 5px solid black;
+    outline: 5px solid black;
+    outline-offset: -14px;
+  }
+  .mainBox:active {
+    scale: 0.95;
+    border: 5.5px solid black;
+    outline: 5.5px solid black;
   }
   .dataimg {
-    width: 50%;
+    width: 70%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transition: 0.4s;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainBox {
+    margin-top: 10px;
+  }
+  .dataimg {
+    width: 70%;
     height: 70%;
     -o-object-fit: contain;
        object-fit: contain;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
-    border: 2px solid red;
   }
-}
-/*# sourceMappingURL=items.css.map */
+  .description {
+    color: black;
+    font-size: small;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0px 10px;
+  }
+  .price {
+    display: none;
+  }
+}/*# sourceMappingURL=items.css.map */

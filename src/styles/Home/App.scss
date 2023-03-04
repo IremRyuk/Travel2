@@ -268,10 +268,19 @@
         height: auto;
         display: grid;
         grid-template-columns: 100%;
-        border: 2px solid red;
         justify-content: space-around;
         justify-items: center;
         align-items: center;
-        padding: 20px 0;
+        padding: 0px 0;
+    }
+}
+@media screen and(max-width:800px){
+    .menu-mini{
+        border-radius: 10px;
+    }
+    .centerMenu-mini {
+        width: 95vw;
+        height: 95vh;
+        border-radius: 10px;
     }
 }

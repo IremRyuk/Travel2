@@ -25,7 +25,7 @@ export default function Brightness() {
   return (
     <div>
           <p className='set-range-name'>Change Brightness</p>
-         <input type="range" className='set-range' min='40' value={Saved_Bright||'100'} max='100' onChange={(e)=>{dispatch({type:'bright',payload:e.target.value}),saveBrightness()}}/>
+         <input type="range" className='set-range' min='40' value={Saved_Bright||'100'} max='100' onChange={(e)=>{dispatch({type:'bright',payload:e.target.value});saveBrightness()}}/>
     </div>
   )
 }

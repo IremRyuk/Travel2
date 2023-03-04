@@ -18,15 +18,9 @@ input::-webkit-inner-spin-button {
   margin-top: 10vh;
   width: 100%;
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .more-img {
@@ -38,16 +32,12 @@ input::-webkit-inner-spin-button {
 
 .more-descr {
   font-size: xx-large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 30%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .showhidebtnform {
@@ -59,21 +49,18 @@ input::-webkit-inner-spin-button {
   padding: 5px 0px;
   font-size: xx-large;
   border: none;
-  background-color: black;
+  background-color: gray;
   color: white;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .showhidebtnform:hover {
-  background-color: #272727;
+  background-color: black;
   scale: 1.2;
 }
-
 .showhidebtnform:active {
-  background-color: #505050;
+  background-color: rgb(80, 80, 80);
   scale: 1.25;
 }
 
@@ -98,17 +85,14 @@ input::-webkit-inner-spin-button {
   border: 2px solid black;
   outline: none;
   background: transparent;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-align: center;
   cursor: pointer;
 }
-
 .more-form-select:focus {
   width: 50%;
   scale: 1.1;
 }
-
 .more-form-select:hover {
   width: 50%;
   scale: 1.1;
@@ -135,14 +119,11 @@ input::-webkit-inner-spin-button {
   outline: none;
   border-bottom: 7px solid aqua;
   background: transparent;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .form-text:hover {
   border-bottom: 7px solid #f54a00;
 }
-
 .form-text:focus {
   width: 40%;
   border-bottom: 7px solid #f54a00;
@@ -150,58 +131,44 @@ input::-webkit-inner-spin-button {
 
 .resetsubmit {
   margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: space-evenly;
+  align-items: baseline;
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   padding: 5px 0px;
 }
-
 .resetsubmit .btnleft {
   border: none;
   padding: 5px 10px;
   border-radius: 1mm;
   font-size: x-large;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: red;
   color: black;
 }
-
 .resetsubmit .btnleft:hover {
   scale: 1.1;
 }
-
 .resetsubmit .btnleft:active {
   scale: 1.2;
 }
-
 .resetsubmit .btnright {
   border: none;
   padding: 5px 10px;
   border-radius: 1mm;
   font-size: x-large;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: green;
   color: black;
 }
-
 .resetsubmit .btnright:hover {
   scale: 1.1;
 }
-
 .resetsubmit .btnright:active {
   scale: 1.2;
 }
@@ -213,11 +180,8 @@ input::-webkit-inner-spin-button {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 10px;
   color: white;
   background-color: gray;
@@ -241,7 +205,6 @@ input::-webkit-inner-spin-button {
   border: none;
   border-radius: 2.4mm;
 }
-
 .more-call:hover {
   -webkit-animation: 1.5s animeCall infinite;
           animation: 1.5s animeCall infinite;
@@ -250,7 +213,6 @@ input::-webkit-inner-spin-button {
 .more-maps {
   width: 100%;
   height: 70vh;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 0mm;
 }
@@ -283,5 +245,4 @@ input::-webkit-inner-spin-button {
     background-color: orange;
     padding: 10px;
   }
-}
-/*# sourceMappingURL=more.css.map */
+}/*# sourceMappingURL=more.css.map */

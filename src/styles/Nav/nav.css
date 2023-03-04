@@ -6,15 +6,9 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   z-index: 20;
   padding: 10px 5px;
   background-color: #f54a00;
@@ -38,14 +32,12 @@
   height: min-content;
   padding: 5px;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .homeLinkTo:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .listLinks {
@@ -54,11 +46,8 @@
   height: -moz-min-content;
   height: min-content;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-right: 20px;
 }
 
@@ -70,13 +59,10 @@
   height: min-content;
   padding: 5px;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .homeLinkToList:hover {
-  color: white;
-}
-/*# sourceMappingURL=nav.css.map */
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=nav.css.map */

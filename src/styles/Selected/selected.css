@@ -3,14 +3,9 @@
   width: 100vw;
   height: 70vh;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: white;
 }
 
@@ -48,34 +43,22 @@
   height: -moz-min-content;
   height: min-content;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .buys {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: x-large;
   width: 60px;
   height: 35px;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 1.4mm;
 }
-
 .buys:active {
   scale: 1.2;
 }
@@ -89,15 +72,9 @@
 }
 
 .current {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: x-large;
   width: 60px;
   height: 35px;
@@ -112,10 +89,8 @@
   border-radius: 2.4mm;
   padding: 5px 0px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .buyItem:hover {
   padding: 10px 5px;
   scale: 1.1;
@@ -133,11 +108,8 @@
   text-align: center;
   text-transform: capitalize;
   cursor: pointer;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .ghost:hover {
   scale: 1.2;
-}
-/*# sourceMappingURL=selected.css.map */
+}/*# sourceMappingURL=selected.css.map */
