@@ -12,9 +12,15 @@ export default function FullDescription() {
 // brighntess
 useEffect(()=>{
   let Saved_Bright = parseInt(localStorage.getItem('brightness'))
+  console.log(Saved_Bright)
   let bright = () =>{
-    $('.navigation').css({top:'-29%'})
-    $('.selected').css({filter:"brightness("+Saved_Bright+"%)"})
+    if(Saved_Bright>=0 || Saved_Bright<=100){
+      $('.navigation').css({top:'-29%'})
+      $('.selected').css({filter:"brightness("+Saved_Bright+"%)"})  
+    }
+    else{
+      $('.navigation').css({top:'0%'})
+    }
   }
   bright()
 },[])

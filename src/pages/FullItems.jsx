@@ -10,14 +10,6 @@ export default function FullItems() {
     const [state,dispatch] = useReducer(reducer,Initial_Values)
     // Data storage
     let [data,setData] = useState(Data)
-    // brightness
-    // useEffect(()=>{
-    //     let Saved_Bright = parseInt(localStorage.getItem('brightness'))
-    //     let bright = () =>{
-    //       $('.allitems').css({filter:"brightness(" + Saved_Bright +"%)"})
-    //     }
-    //     bright()
-    //   })
     // filter items by category names
     let filterItems = (key) =>{
         let newData = Data.filter(res=>{

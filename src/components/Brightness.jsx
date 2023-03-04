@@ -9,7 +9,7 @@ export default function Brightness() {
         let filter = () =>{
           let Saved_Bright = parseInt(localStorage.getItem('brightness'))
             let body = document.querySelector('.App')
-            if(state.brightness === NaN){
+            if(state.brightness>=0 || state.brightness <= 1000){
               body.style.filter = "brightness("+state.brightness+"%)"
             }
             else{
