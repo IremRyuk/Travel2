@@ -1,0 +1,92 @@
+.mainBox {
+  width: 200px;
+  height: 250px;
+  border: 5px solid transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-top: 40px;
+  outline: none;
+  padding: 25px 5px;
+  text-decoration: none;
+}
+
+.mainBox:hover {
+  scale: 1.1;
+  border: 5px solid black;
+  outline: 5px solid black;
+  outline-offset: -14px;
+}
+
+.mainBox:active {
+  scale: 1.15;
+  outline-color: orange;
+  border-color: purple;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainBox:hover .dataimg {
+  scale: 0.8;
+}
+
+.dataimg {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid red;
+}
+
+.description {
+  color: black;
+  font-size: medium;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0px 10px;
+}
+
+.mainBox:last-child {
+  margin-bottom: 100px;
+}
+
+.items-router {
+  text-decoration: none;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: 2px solid red;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .mainBox {
+    width: 100%;
+    height: 250px;
+    border: 5px solid transparent;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dataimg {
+    width: 50%;
+    height: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: 2px solid red;
+  }
+}
+/*# sourceMappingURL=items.css.map */

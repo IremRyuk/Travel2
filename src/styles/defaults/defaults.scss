@@ -1,0 +1,24 @@
+// large screen
+@mixin routerButtons {
+    font-size: x-large;
+    width: 200px;
+    height: min-content;
+    padding: 5px;
+    // border: 2px solid purple;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.2s;
+    &:hover{
+        color: rgb(255, 255, 255);
+    }
+}
+@mixin buybtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    width: 60px;
+    height: 35px;
+    border: none;
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "img":"https://www.brandx.co.za/wp-content/uploads/2022/01/BRX_Power-Bank-Travel-Kit-BrandX-PDCGOW2-SWESI.jpg",
+        "category":"electronic",
+        "title":"Power Bank Travel Kit",
+        "current":4,
+        "price":200
+    },
+    {
+        "id":2,
+        "img":"https://www.vegea.com/Dos-Imgs/set-power-bank-tilmix-publicitaire-personnalisable-0369558.jpg",
+        "category":"electronic",
+        "title":"power bank tilmix",
+        "current":20,
+        "price":270
+    },
+    {
+        "id":3,
+        "img":"https://www.sbsmobile.com/ita/202371-thickbox_default/travel-kit-organiser-power-bank-wall-charger-cable.jpg",
+        "category":"electronic",
+        "title":"travel kit organiser power bank", 
+        "current":11,
+        "price":170
+    },
+    {
+        "id":4,
+        "img":"https://cdn1.dotesports.com/wp-content/uploads/2022/04/20090210/solar-power-1010x1024.jpg",
+        "category":"electronic",
+        "title":"solar power",
+        "current":17,
+        "price":290
+    },
+    {
+        "id":5,
+        "img":"https://rukminim1.flixcart.com/image/832/832/kg9qbgw0/small-travel-bag/k/n/d/lightweight-60-l-luggage-travel-duffel-bag-with-2-wheels-purple-original-imafwjhfzcvyfqve.jpeg?q=70",
+        "category":"bag",
+        "title":" Luggage Travel Duffel Bag",
+        "current":2,
+        "price":70
+    },
+    {
+        "id":6,
+        "img":"https://rukminim1.flixcart.com/image/832/832/kqco5u80/suitcase/r/p/z/15-suitcase-22inch-travel-suitcase-bag-for-men-and-women-45-l-original-imag4dqfz3kduywt.jpeg?q=70",
+        "category":"bag",
+        "title":"Small Travel Bag 45 L",
+        "current":18,
+        "price":125
+    },
+    {
+        "id":7,
+        "img":"https://viatravelers.com/wp-content/uploads/2022/04/Ray-Ban-Aviator-Classic-1.jpg.webp",
+        "category":"sunglasees",
+        "title":"Suncloud Step Out Sunglasses",
+        "current":24,
+        "price":250
+    },
+    {
+        "id":8,
+        "img":"https://img.ebdcdn.com/product/frame/white/spm0228_3.jpg?im=Resize,width=600,height=300,aspect=fill;UnsharpMask,sigma=1.0,gain=1.0",
+        "category":"sunglasees",
+        "title":"Browline Black Sunglasses",
+        "current":12,
+        "price":140
+    },
+    {
+        "id":9,
+        "img":"https://5.imimg.com/data5/DW/HH/MY-66421842/kemount-sunglasses-500x500.jpg",
+        "category":"sunglasees",
+        "title":"Male Key Mount Sunglasses",
+        "current":37,
+        "price":180
+    }
+]

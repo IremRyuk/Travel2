@@ -1,0 +1,36 @@
+@import '../defaults/defaults.scss';
+.navigation{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: min-content;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    padding: 10px 5px;
+    background-color:#f54a00;
+}
+.homeLink{
+    width: fit-content;
+    height: min-content;
+    // border: 2px solid red;
+    margin-left: 20px;
+}
+.homeLinkTo{
+@include routerButtons;
+}
+.listLinks{
+    width: 20vw;
+    height: min-content;
+list-style: none;
+display: flex;
+justify-content: space-around;
+// border: 2px solid blue;
+margin-right: 20px;
+}
+.homeLinkToList{
+    @include routerButtons;
+}

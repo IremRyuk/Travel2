@@ -1,0 +1,143 @@
+.selected {
+  margin-top: 20vh;
+  width: 100vw;
+  height: 70vh;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.sel-img {
+  width: 40%;
+  height: 100%;
+}
+
+.sel-img-cur {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-backdrop-filter: 5px 5px 5px red;
+          backdrop-filter: 5px 5px 5px red;
+}
+
+.sel-decr {
+  width: 40%;
+  height: 100%;
+  line-height: 70px;
+  text-align: center;
+}
+
+.sel-decr-par {
+  font-size: xx-large;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.buy {
+  margin-top: 5%;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.buys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+  width: 60px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 1.4mm;
+}
+
+.buys:active {
+  scale: 1.2;
+}
+
+.btnLeft {
+  background-color: red;
+}
+
+.btnRight {
+  background-color: green;
+}
+
+.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+  width: 60px;
+  height: 35px;
+  border: none;
+}
+
+.buyItem {
+  width: 30%;
+  font-size: xx-large;
+  background-color: #f54a00;
+  border: none;
+  border-radius: 2.4mm;
+  padding: 5px 0px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.buyItem:hover {
+  padding: 10px 5px;
+  scale: 1.1;
+}
+
+.ghost {
+  position: absolute;
+  right: -100%;
+  bottom: 15%;
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+  padding: 10px;
+  font-size: large;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.ghost:hover {
+  scale: 1.2;
+}
+/*# sourceMappingURL=selected.css.map */
