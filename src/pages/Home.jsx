@@ -75,6 +75,13 @@ and experience </p>
   )}
   </div>
   </div>
+  <button className='menuAllList'>
+    <i className="fa-solid fa-bars" />
+    <ul className='burger-menu'>
+      <li><Link className='links-menu' to='/'>ALL Items</Link></li>
+      <li><Link className='links-menu' to='/'>More</Link></li>
+    </ul>
+    </button>
   </div>
 }
     </div>
