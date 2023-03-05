@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 function App() {
   const [state,dispatch] = useReducer(reducer,Initial_Values)
   const [size,setSize] = useState(window.innerWidth)
+  console.log(size)
   // useEffct
   useEffect(()=>{
     setTimeout(()=>{
@@ -29,8 +30,6 @@ function App() {
   }
   size()
   },[])
-
-  console.log(size)
 
   let moveImg = () =>{
     // change state of button in image
@@ -53,7 +52,7 @@ else return $('.mainPic').css({right:'50%'})
     <p className='travel3'>collection of the most 
 beautiful places 
 and experience </p>
-<button className='start'><Link to='/fullitems' className='start-link'>Get started</Link></button>
+<button className='start'><Link to='/fullitems' className='start-link' title='all items'>Get started</Link></button>
   </div>
   
   <div className='menu'>

@@ -36,23 +36,35 @@ useEffect(()=>{
         return
       }else{
         dispatch({type:'decrement'})
+        dispatch({type:'amount',payload:state.selectedAmount -  MainData.price})
       }
       
     }
     let plus = () =>{
       if(state.selectedItems === MainData.current){
-        $('.ghost').css({right:'5%'})
+        $('.ghost').css({left:'5%'})
         return
       }else{
         dispatch({type:'increment'})
+        dispatch({type:'amount',payload:MainData.price *  state.selectedItems + MainData.price})
       }
     }
     // buy item
     const buy = () =>{
-      alert('congrats you bought this item')
-      dispatch({type:'zero'})
+      if(state.selectedItems === 0){
+        setTimeout(()=>{
+          $('.buyItem').css({animation:'none'})
+        $('.current').css({animation:'none'})
+        },1500)
+          $('.buyItem').css({animation:'1.5s redBtn linear'})
+          $('.current').css({animation:'1.5s redBtn linear'})
+      }else{
+        alert('congrats you bought this item')
+        dispatch({type:'zero'})
+      }
     }
   return (
+    
     <div className='selected'>
       <Nav />
       <div className='sel-img'>
@@ -62,6 +74,7 @@ useEffect(()=>{
         <p className='sel-decr-par'>Name: {MainData.title}</p>
         <p className='sel-decr-par'>Category: {MainData.category}</p>
         <p className='sel-decr-par'>Price: {MainData.price} $</p>
+        <p className='sel-decr-par'>Current: {state.selectedAmount} $</p>
         <div className='buy'>
           <button className='buys btnLeft' onClick={()=>{minus()}}>-</button>
           <p className='current'>{state.selectedItems}</p>
@@ -69,7 +82,7 @@ useEffect(()=>{
         </div>
         <center><button className='buyItem' onClick={()=>buy()}>Buy</button></center>
       </div>
-      <div className='ghost' onClick={()=>{$('.ghost').css({right:'-100%'})}}>Maximum Amount of items Selected</div>
+      <div className='ghost' onClick={()=>{$('.ghost').css({left:'-100%'})}}>Maximum Amount of items Selected</div>
     </div>
   )
 }

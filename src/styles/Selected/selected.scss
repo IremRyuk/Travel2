@@ -8,7 +8,7 @@ margin-top: 20vh;
 //  border: 2px solid red;   
  display: flex;
  justify-content: space-around;
- align-items: center;
+ align-items: stretch;
  background-color: white;
 }
 .sel-img{
@@ -62,6 +62,7 @@ border-radius: 1.4mm;
 }
 .current{
 @include buybtn;
+border-radius: 2.4mm;
 }
 .buyItem{
     width: 30%;
@@ -80,8 +81,8 @@ border-radius: 1.4mm;
 // ghost
 .ghost{
     position: absolute;
-    right:-100%;
-    bottom: 15%;
+    left:-100%;
+    bottom: 0%;
     width: 200px;
     height: 50px;
     background-color: yellow;
@@ -94,4 +95,58 @@ border-radius: 1.4mm;
     &:hover{
         scale: 1.2;
     }
+}
+// animation
+@keyframes redBtn{
+    0%{
+        background-color: #f54a00;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: #f54a00;
+    }
+}
+// resize
+@media screen and (max-width:1200px){
+    .selected{
+         align-items:stretch;
+        }
+    .sel-img{
+        width: 70%;
+        height: 70%;
+    }
+    .sel-decr{
+        width: 30%;
+        height: 100%;
+        // border: 2px solid red;
+        line-height: 40px;
+    }
+    .sel-decr-par{
+        font-size: x-large;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:800px) {
+    .selected{
+        margin-top: 20vh;
+         width: 100vw;
+         height: 70vh;
+         padding: 5px;
+        //  border: 2px solid red;   
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: white;
+        }
+        .sel-img{
+            width: 100%;
+        }
+        .sel-decr{
+            width: 100%;
+        }
+        .buys{
+            @include buybtn;
+        }
 }

@@ -212,7 +212,7 @@
 @media screen and (max-width: 1300px) {
   .centerMenu {
     width: 95vw;
-    height: 70vh;
+    height: 85vh;
     display: flex;
     border-radius: 90px;
     position: relative;

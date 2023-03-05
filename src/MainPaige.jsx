@@ -6,6 +6,7 @@ import Items from './pages/Items'
 import FullItems from './pages/FullItems'
 import More from './pages/More'
 
+
 export default function MainPaige() {
   return (
     <div>

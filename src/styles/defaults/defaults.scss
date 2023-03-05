@@ -22,3 +22,13 @@
     height: 35px;
     border: none;
 }
+
+@mixin buybtnMini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    width: 30px;
+    height: 25px;
+    border: none;
+}

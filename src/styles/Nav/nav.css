@@ -3,9 +3,7 @@
   top: 0%;
   left: 0%;
   width: 100vw;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

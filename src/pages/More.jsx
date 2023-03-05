@@ -12,7 +12,20 @@ export default function More() {
     // useEffct
     useEffect(()=>{
         // hide jobs form
-        $('.more-form').hide()        
+        $('.more-form').hide()    
+        // brightness
+        let Saved_Bright = parseInt(localStorage.getItem('brightness'))
+        console.log(Saved_Bright)
+        let bright = () =>{
+          if(Saved_Bright>=0 || Saved_Bright<=100){
+            $('.navigation').css({top:'-6%'})
+            $('.more').css({filter:"brightness("+Saved_Bright+"%)"})  
+          }
+          else{
+            $('.navigation').css({top:'0%'})
+          }
+        }
+        bright()
     },[])
 
     // show/hide form
