@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react'
+import { useState,useEffect, useReducer } from 'react'
 import '../styles/Home/App.css'
 import $ from 'jquery'
 import Data from '../storage/data.json'
@@ -8,6 +8,7 @@ import Brightness from '../components/Brightness'
 import { Link } from 'react-router-dom'
 function App() {
   const [state,dispatch] = useReducer(reducer,Initial_Values)
+  const [size,setSize] = useState(window.innerWidth)
   // useEffct
   useEffect(()=>{
     setTimeout(()=>{
@@ -20,16 +21,16 @@ function App() {
       $('.centerMenu').css({backgroundColor:'white'})
       $('.hideShow').css({visibility:'visible'})
     },1100)
-      // screen size W
+      // screen size Width
   let size = () =>{
     window.addEventListener('resize',()=>{
-      dispatch({type:'windowResizeW',payload:window.innerWidth})
+      setSize(window.innerWidth)
     })
   }
   size()
   },[])
 
-  console.log(state.screenSizeW)
+  console.log(size)
 
   let moveImg = () =>{
     // change state of button in image
@@ -65,7 +66,7 @@ and experience </p>
   </div>
 </div>
 {/* screen size lower than 1000px */}
-{state.screenSizeW <= 1000 && 
+{size <= 1000 &&
   <div className='centerMenu-mini'>
 <div className='menu-mini'>
   <center><p className='header-mini'>Travel Accessories</p></center>
@@ -78,8 +79,8 @@ and experience </p>
   <button className='menuAllList'>
     <i className="fa-solid fa-bars" />
     <ul className='burger-menu'>
-      <li><Link className='links-menu' to='/'>ALL Items</Link></li>
-      <li><Link className='links-menu' to='/'>More</Link></li>
+      <li><Link className='links-menu' to='/fullitems'>ALL Items</Link></li>
+      <li><Link className='links-menu' to='/more'>More</Link></li>
     </ul>
     </button>
   </div>

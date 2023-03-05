@@ -13,11 +13,6 @@ case 'decrement':
     return{selectedItems:state.selectedItems - 1}
 case 'zero':
     return{selectedItems:state.selectedItems  = 0}
-case 'windowResizeW':
-    return{
-        ...state,
-        screenSizeW:action.payload
-    }
     // More Page
 case 'selectPositions':
         return{
@@ -43,7 +38,6 @@ arrow:true,
 brightness:100,
 search:'',
 selectedItems:0,
-screenSizeW:window.innerWidth,
 // more page
 selectedPositions:'',
 personName:'',

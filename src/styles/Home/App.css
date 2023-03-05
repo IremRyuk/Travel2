@@ -219,7 +219,13 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .centerMenu, .mainPic, .menu {
+  .centerMenu {
+    display: none;
+  }
+  .mainPic {
+    display: none;
+  }
+  .menu {
     display: none;
   }
   .centerMenu-mini {
@@ -231,8 +237,8 @@
   }
   .menu-mini {
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 99%;
     z-index: 5;
@@ -251,7 +257,7 @@
   .items-mini {
     position: absolute;
     top: 5%;
-    left: 0%;
+    left: 0;
     z-index: 20;
     width: 100%;
     height: auto;
@@ -278,11 +284,11 @@
     font-weight: bold;
   }
   .menuAllList:hover .burger-menu {
-    right: 0%;
+    right: 0;
   }
   .burger-menu {
     position: fixed;
-    top: 0%;
+    top: 0;
     right: -100%;
     width: 200px;
     height: 100vh;
@@ -312,7 +318,7 @@
   .items-mini {
     position: absolute;
     top: 5%;
-    left: 0%;
+    left: 0;
     z-index: 20;
     width: 100%;
     height: auto;
@@ -321,7 +327,7 @@
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    padding: 0px 0;
+    padding: 0;
   }
   .menu-mini {
     border-radius: 10px;
