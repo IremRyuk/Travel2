@@ -68,16 +68,17 @@
   width: 310px;
   height: 400px;
   padding: 5px;
-  border: 5px solid red;
-  outline: 3px solid transparent;
-  border-radius: 10mm;
+  border: none;
+  border-bottom: 2px solid red;
+  border-radius: 0mm;
   text-decoration: none;
   color: black;
   transition: 0.4s;
 }
 .items2:hover {
   scale: 1.1;
-  border: 7px solid red;
+  border: 5px solid red;
+  border-radius: 10mm;
 }
 .items2:hover .items-img {
   scale: 1;

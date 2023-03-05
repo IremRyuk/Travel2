@@ -52,7 +52,7 @@ else return $('.mainPic').css({right:'50%'})
     <p className='travel3'>collection of the most 
 beautiful places 
 and experience </p>
-<button className='start'><Link to='/fullitems' className='start-link' title='all items'>Get started</Link></button>
+<Link to='/fullitems' className='start'><p className='start-link' title='all items'>Get started</p></Link>
   </div>
   
   <div className='menu'>

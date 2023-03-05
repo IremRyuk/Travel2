@@ -138,6 +138,7 @@
 }
 .start {
     position: absolute;
+    text-decoration: none;
     left: 5%;
     top: 70%;
     padding: 10px;
@@ -154,7 +155,6 @@
         color: white;
     }
     .start-link {
-        text-decoration: none;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
